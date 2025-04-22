@@ -1,0 +1,8 @@
+# Bỏ qua tất cả các thư mục out
+**/out/
+
+# Bỏ qua tất cả các thư mục .idea
+**/.idea/
+
+# Bỏ qua tất cả các file .iml (cả trong các thư mục con)
+**/*.iml
