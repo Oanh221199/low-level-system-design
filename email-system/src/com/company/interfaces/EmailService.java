@@ -1,4 +1,4 @@
-package com.company.service;
+package com.company.interfaces;
 
 import com.company.model.Email;
 

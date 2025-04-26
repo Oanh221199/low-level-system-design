@@ -1,13 +1,15 @@
 package com.company.model;
 
 import java.time.LocalDateTime;
+import java.util.List;
+
 // Tính kế thừa
 public class VipUser extends User {
     // Tính đóng gói
     private int vipLevel;
 
-    public VipUser(String id, String name, String email, int vipLevel, LocalDateTime now) {
-        super(id, name, email);
+    public VipUser(String id, String name, List<Email> emails, int vipLevel) {
+        super(id, name, emails);
         this.vipLevel = vipLevel;
     }
 

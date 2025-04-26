@@ -1,5 +1,6 @@
 package com.company.service;
 
+import com.company.interfaces.EmailService;
 import com.company.model.Email;
 import com.company.util.SpamFilter;
 

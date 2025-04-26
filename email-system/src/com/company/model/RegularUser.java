@@ -1,13 +1,15 @@
 package com.company.model;
 
 import java.time.LocalDateTime;
+import java.util.List;
+
 // Tính kế thừa
 public class RegularUser extends  User {
     // Tính đóng gói
     private LocalDateTime registrationDate;
 
-    public RegularUser(String id, String name, String email, LocalDateTime registrationDate) {
-        super(id, name, email);
+    public RegularUser(String id, String name, List<Email> emails, LocalDateTime registrationDate) {
+        super(id, name, emails);
         this.registrationDate = registrationDate;
     }
 

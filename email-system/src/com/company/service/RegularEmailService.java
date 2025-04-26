@@ -1,12 +1,13 @@
 package com.company.service;
 
+import com.company.interfaces.EmailService;
 import com.company.model.Email;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 //Tính kế thừa
-public class RegularEmailService implements EmailService{
+public class RegularEmailService implements EmailService {
     // Tính đa hình
     // Lambda Expressions: e -> !e.isRead()
     // Stream api: use . stream()

@@ -1,18 +1,18 @@
 package com.company.model;
+
+import java.util.List;
+
 // Tính trừu tượng
 public abstract class User {
     // Tính đóng gói
     private String id;
     private String name;
-    private String email;
+    private List<Email> emails;
 
-    public User() {
-    }
-
-    public User(String id, String name, String email) {
+    public User(String id, String name, List<Email> emails) {
         this.id = id;
         this.name = name;
-        this.email = email;
+        this.emails = emails;
     }
 
     public String getId() {
@@ -31,12 +31,12 @@ public abstract class User {
         this.name = name;
     }
 
-    public String getEmail() {
-        return email;
+    public List<Email> getEmails() {
+        return emails;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmails(List<Email> emails) {
+        this.emails = emails;
     }
 
     @Override
@@ -44,7 +44,7 @@ public abstract class User {
         return "User{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
+                ", emails=" + emails +
                 '}';
     }
 }
